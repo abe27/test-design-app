@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:linuxapp/components/search_bar_widget.dart';
+import 'package:linuxapp/views/dash.dart';
 import 'package:linuxapp/views/home.dart';
 
 void main() {
@@ -113,26 +114,8 @@ class _MainPageState extends State<MainPage> {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            const SearchBarWidget()
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      body:
+          const DashboardPage(), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
