@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:linuxapp/components/search_bar_widget.dart';
+import 'package:linuxapp/views/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -74,6 +75,15 @@ class _MainPageState extends State<MainPage> {
               leading: const Icon(Icons.home),
               title: const Text("Page 1"),
               onTap: () => Navigator.pop(context),
+            ),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: const Text("Page 1"),
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(title: "Home Page"),
+                  )),
             ),
             ListTile(
               leading: const Icon(Icons.home),
