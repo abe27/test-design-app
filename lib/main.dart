@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:linuxapp/components/search_bar_widget.dart';
 import 'package:linuxapp/views/dash.dart';
 import 'package:linuxapp/views/home.dart';
 
